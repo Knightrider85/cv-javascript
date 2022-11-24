@@ -17,5 +17,3 @@ toggleButton.addEventListener("click", () => {
     navList.classList.toggle("active");
 }) 
 }
-
-$('.carousel').mdbCarousel3d()
