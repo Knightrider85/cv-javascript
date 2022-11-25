@@ -5,6 +5,7 @@
     
 }
 
+
     /* hjälper till att centrera innehållet på stora skärmar */
 .container {
     width: 100%;
@@ -23,6 +24,8 @@
     background-color: black;
     color: white;
     font-size: 20px;
+    
+    
     
 }
 
@@ -78,6 +81,28 @@
     align-items: center;
 
 }
+
+.main-info {
+    color: white;
+    background-image: url("./minbild.JPG");
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+}
+
+.picture-text {
+    text-align: left;
+}
+/*  
+.main-picture {
+    display: flex;
+    margin: auto;
+    size: 500px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+*/
 
 .slider {
     position: relative;
