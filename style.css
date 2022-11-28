@@ -16,9 +16,9 @@ body {
     color: #FBF5F3;
     font-size: 30px;
     width: 100%;
-    height: 70px;
+    height: 150px;
     display: flex;
-    background-color: #8DAA9D;
+    background-color: #3A405A;
     
 }
 
@@ -57,24 +57,24 @@ body {
 
 .main {
     flex-direction: column;
-    background-color: aqua;
     display: flex;
+    background-color: #F9DEC9;
+    height: 80vh;
 }
 
 
 
 .banner {
-    flex-direction: column;
+    max-width: 1400px;
     
 }
 
-.banner-text {
+.main-text {
     color: #312F2F;
     font-size: 30px;
     position: relative;
     text-align: center;
-    float: left;
-    margin-top: 10px;
+    margin: auto;
 }
 
 .banner-img {
@@ -82,10 +82,8 @@ body {
     display: inline-block;
 	position: relative;
 	overflow: hidden;
-	height: 100%;
-	float: right;
-	width: 50%;
-    margin-top: 10px;
+	height: 60%;
+	width: 100%;
 }
 
 /* slider */
@@ -97,7 +95,7 @@ body {
     animation: rotate 30s linear infinite;
     background-color: red;
     margin-top: 100px;
-    margin-left: 50%;
+    margin-left: 48%;
     display: flex;
 }
 
@@ -139,6 +137,15 @@ body {
 .slider span:hover img {
     transform: translateY(-50px) scale(1.2);
 }
+
+.banner-text {
+    color: #312F2F;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 
 @media all and (max-width: 480px) {
@@ -193,13 +200,6 @@ body {
 
 
 /* reusable code */
-
-
-.container-main {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-}
 
 .flex-between-main {
     display: flex;
