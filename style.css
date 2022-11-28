@@ -6,26 +6,17 @@
 }
 
 
-    /* hjälper till att centrera innehållet på stora skärmar */
-.container {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-}
-
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 
 .navbar {
-    background-color: black;
     color: white;
-    font-size: 20px;
-    
-    
+    font-size: 30px;
+    background-image: url(./minbild.JPG);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -39,29 +30,21 @@
     text-decoration: none;
 }
 
-
 .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
     
-    
 }
 
-.primary-picture-logo {
-    height: 30px;
-    border-radius: 200rem;
-    
+.navbar a:hover {
+    color: rgb(255, 179, 80);
 }
-
+/* burgermenu */
 .menu-line {
     width: 20px;
     height: 3px;
     background-color: white;
     margin-bottom: 3px;
-}
-
-.navbar a:hover {
-    color: rgb(255, 179, 80);
 }
 
 .menu {
@@ -71,46 +54,22 @@
 
 /* main code start here */
 
-.container-main {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.main-info {
+.banner-text {
     color: white;
-    background-image: url("./minbild.JPG");
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
+    font-size: 30px;
+    position: absolute;
+    top: 15%;
 }
 
-.picture-text {
-    text-align: left;
-}
-/*  
-.main-picture {
-    display: flex;
-    margin: auto;
-    size: 500px;
-    width: 100%;
-    justify-content: space-between;
-    max-width: 1400px;
-}
-*/
-
+/* slider */
 .slider {
-    position: relative;
+    position: absolute;
+    top: 45%;
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
-    display: flex;
     animation: rotate 30s linear infinite;
+    left: 38%;
 }
 
 @keyframes rotate {
@@ -121,6 +80,8 @@
         transform: perspective(1000px) rotateY(360deg);
     }
 }
+
+/* 3d carusel code */
 
 .slider span {
     position: absolute;
@@ -149,6 +110,7 @@
 .slider span:hover img {
     transform: translateY(-50px) scale(1.2);
 }
+
 
 @media all and (max-width: 480px) {
     .navbar {
@@ -197,6 +159,39 @@
 }
 
 
+
+
+
+
+/* reusable code */
+
+
+.container-main {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex-between-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* hjälper till att centrera innehållet på stora skärmar */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 /* 
