@@ -5,7 +5,7 @@
     
 }
 body {
-    background-image: url(./minbild.JPG);
+    background-color: #FBF5F3;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,12 +13,12 @@ body {
 }
 
 .navbar {
-    color: white;
+    color: #FBF5F3;
     font-size: 30px;
     width: 100%;
     height: 70px;
     display: flex;
-    background-color: black;
+    background-color: #8DAA9D;
     
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: #FBF5F3;
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ body {
 .menu-line {
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #FBF5F3;
     margin-bottom: 3px;
 }
 
@@ -55,27 +55,50 @@ body {
 
 /* main code start here */
 
-.banner {
-    display: flex;
+.main {
     flex-direction: column;
+    background-color: aqua;
+    display: flex;
+}
+
+
+
+.banner {
+    flex-direction: column;
+    
 }
 
 .banner-text {
-    color: white;
+    color: #312F2F;
     font-size: 30px;
-    position: fixed;
-    top: 15%;
+    position: relative;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+}
+
+.banner-img {
+    background-repeat: no-repeat;
+    display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+    margin-top: 10px;
 }
 
 /* slider */
 .slider {
-    position: fixed;
-    top: 45%;
+    position: relative;
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
-    left: 32%;
+    background-color: red;
+    margin-top: 100px;
+    margin-left: 50%;
+    display: flex;
 }
 
 
@@ -152,7 +175,7 @@ body {
 
     .nav-list .list-item {
         display: block;
-        border-top: 1px solid white;
+        border-top: 1px solid #FBF5F3;
         
         
     }
