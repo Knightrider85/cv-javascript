@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 1em 2em;
     margin: 0;
     
 }
@@ -14,9 +14,9 @@ body {
 
 .navbar {
     color: #FBF5F3;
-    font-size: 30px;
+    font-size: 16px;
     width: 100%;
-    height: 150px;
+    height: 64px;
     display: flex;
     background-color: #3A405A;
     
@@ -55,23 +55,48 @@ body {
 
 /* main code start here */
 
-.main {
-    flex-direction: column;
+.container1 {
     display: flex;
-    /* background-color: #99B2DD; */
-    height: 150vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em 0;
+    text-align: left;
     background-image: url(./renbild2.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1400px;
+    width: 100%;
+  }
+
+
+  .card {
+    width: 40%;
+    display: flex;
+    background: #eee;
+    padding: 0.6em 1em 0.6em 0.6em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
+    border: solid 1px #ccc;
+  }
+  
+  .img-cards {
+
+    min-width: 100px;
+    height: 100px;
+    border-radius: 0.3em;
+    background-image: url(./minbild.JPG);
     background-size: contain;
-}
-
-
-
-
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+    margin: 0 0.6em 0 0;
+    border: solid 1px firebrick;
+  }
 
 .banner {
     max-width: 1400px;
-    background-color: #F9DEC9;
+    background-color: #819595;
     width: 100%;
     display: flex;
     border: 3px solid #FBF5F3;
@@ -167,6 +192,10 @@ body {
         position: relative;
     }
 
+    .card {
+        box-shadow: none;
+      }
+
     .menu {
         display: block;
         position: absolute;
@@ -214,14 +243,6 @@ body {
 
 /* reusable code */
 
-.flex-between-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
 /* hjälper till att centrera innehållet på stora skärmar */
 .container {
     width: 100%;
@@ -235,6 +256,16 @@ body {
     align-items: center;
 }
 
+  
+  @media (max-width: 820px) {
+    .container {
+      min-width: auto;
+      display: block;
+    }
+    .card {
+      width: 100%;
+    }
+  }
 
 /* 
 *:before,
