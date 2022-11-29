@@ -62,6 +62,7 @@ body {
     padding: 1em 0;
     text-align: left;
     background-image: url(./renbild2.jpg);
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1400px;
@@ -100,32 +101,17 @@ body {
 
 .banner {
     max-width: 1400px;
-    background-color: #819595;
     width: 100%;
     display: flex;
     border: 3px solid #FBF5F3;
     
 }
 
-.main-text {
+.banner-text {
     color: #312F2F;
-    font-size: 30px;
     position: relative;
     text-align: center;
-    margin: auto;
-    float: left;
-    
-}
-
-.banner-img {
-    background-repeat: no-repeat;
-    display: inline-block;
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	width: 50%;
-    float: right;
-    border-left: 3px solid #FBF5F3;
+    margin-top: 30px;
 }
 
 /* slider */
@@ -139,17 +125,6 @@ body {
     margin-top: 100px;
     margin-left: 48%;
     display: flex;
-}
-
-
-/* 3d carusel code */
-@keyframes rotate {
-    0%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100%{
-        transform: perspective(1000px) rotateY(360deg);
-    }
 }
 
 .slider span {
@@ -179,16 +154,28 @@ body {
 .slider span:hover img {
     transform: translateY(-50px) scale(1.2);
 }
-
-.banner-text {
-    color: #312F2F;
-    font-size: 40px;
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
+/* 3d carusel code */
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
 }
 
+.card-background {
+    background-image: url(./grevens.jpeg);
+    background-position: 50% ;
+}
 
+.img-card3 {
+    background-image: url(./servicebild.jpeg);
+}
+
+.img-card4 {
+    background-image: url(./renbild2.jpg);
+}
 
 @media all and (max-width: 480px) {
     .navbar {
