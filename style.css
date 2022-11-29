@@ -170,11 +170,23 @@ body {
 }
 
 .img-card3 {
-    background-image: url(./servicebild.jpeg);
+    background-image: url(./grevenslogga.jpg);
 }
 
 .img-card4 {
-    background-image: url(./renbild2.jpg);
+    background-image: url(./bellisloggany.png);
+}
+
+/* footer area start */
+
+.footer {
+    color: #FBF5F3;
+    font-size: 16px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    background-color: #3A405A;
+    
 }
 
 @media all and (max-width: 480px) {
