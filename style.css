@@ -61,12 +61,12 @@ body {
 /* main code start here */
 
 .container1 {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em 0;
-    text-align: left;
-    background-image: url(./renbild2.jpg);
+    text-align: center;
+    background-image: url(./bildmig3.jpeg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,8 +82,8 @@ body {
 
 
 .card {
-    width: 40%;
-    display: flex;
+    width: 100%;
+    display: block;
     background: rgba(238, 238, 238, 0.61);
     padding: 0.6em 1em 0.6em 0.6em;
     margin-bottom: 1em;
@@ -94,23 +94,17 @@ body {
     margin-top: 30px;
   }
   
-.img-cards {
-
-    min-width: 100px;
-    height: 100px;
+  .card-2 {
+    width: 100%;
+    display: block;
+    padding: 0.6em 1em 0.6em 0.6em;
+    margin-bottom: 1em;
     border-radius: 0.3em;
-    background-image: url(./minbild.JPG);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* opacity: .7; */
-    margin: 0 0.6em 0 0;
-    border: solid 1px #819595;
+    box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
+    height: 80vh;
+    margin-top: 30px;
   }
 
-.imgcard2 {
-    background-image: url(./bildmig3.jpeg);
-}
 
 .banner {
     max-width: 1400px;
@@ -120,7 +114,7 @@ body {
     
 }
 
-.banner-text {
+.banner-text1 {
     color: #312F2F;
     position: relative;
     text-align: center;
@@ -179,10 +173,11 @@ body {
 
 
 table {
-	width: 800px;
+	width: 100%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #3A405A;
 }
 
 th,
@@ -190,52 +185,27 @@ td {
 	padding: 15px;
 	background-color: rgba(255,255,255,0.2);
 	color: #fff;
+    text-align: center;
 }
 
 th {
-	text-align: left;
+	text-align: center;
 }
 
 thead {
-	th {
-		background-color: #55608f;
-	}
+	background-color: #819595;
 }
 
 tbody {
-	tr {
-		&:hover {
-			background-color: rgba(255,255,255,0.3);
-		}
-	}
+
 	td {
 		position: relative;
-		&:hover {
-			&:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -9999px;
-				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2);
-				z-index: -1;
-			}
-		}
 	}
 }
 
 .card-background {
     background-image: url(./grevens.jpeg);
     background-position: 50% ;
-}
-
-.img-card3 {
-    background-image: url(./grevenslogga.jpg);
-}
-
-.img-card4 {
-    background-image: url(./bellisloggany.png);
 }
 
 /* footer area start */
