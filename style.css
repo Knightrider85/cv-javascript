@@ -22,7 +22,7 @@ body {
     
 }
 .logo-text {
-    font-size: 40px;
+    font-size: 18px;
     font-family: serif;
     color: #F9DEC9;
 }
@@ -40,6 +40,7 @@ body {
 .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
+    color: #FBF5F3;
     
 }
 
@@ -224,6 +225,7 @@ tbody {
 
     .card {
         box-shadow: none;
+        
       }
 
     .menu {
@@ -352,11 +354,17 @@ span {
     .nav-list .list-item {
         display: block;
         
-        
-        
     }
 
     .active {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .flex-between {
         display: block;
     }
 }
