@@ -55,7 +55,7 @@ body {
 /* main code start here */
 
 .container1 {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em 0;
@@ -65,7 +65,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1400px;
-    min-height: 100vh;
     width: 100%;
   }
   .container-hero {
@@ -77,29 +76,32 @@ body {
 
 
 .card {
-    width: 100%;
+    width: 70%;
     display: inline-table;
-    background: rgba(238, 238, 238, 0.61);
+    background: #F9DEC9;
     padding: 0.6em 1em 0.6em 0.6em;
     margin-bottom: 1em;
     border-radius: 0.3em;
     box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
     border: solid 1px #ccc;
-    height: 30vh;
     margin-top: 60px;
   }
-  
-  .card-2 {
-    width: 100%;
-    display: inline-table;
-    padding: 0.6em 1em 0.6em 0.6em;
-    margin-bottom: 1em;
-    border-radius: 0.3em;
-    box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
-    height: 30vh;
-    margin-top: 50px;
-  }
 
+  .card-font {
+    list-style: none;
+    color:#312F2F
+  }
+  
+ .my-experience {
+    background: #E9AFA3;
+    color: #FBF5F3;
+
+ }
+
+ .my-characteristic {
+    background: #99B2DD;
+   
+ } 
 
 .banner {
     max-width: 1400px;
@@ -165,39 +167,6 @@ body {
     }
 }
 
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    background-color: #3A405A;
-    margin-top: 10px;
-}
-
-th,
-td {
-	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
-	color: #fff;
-    text-align: center;
-}
-
-th {
-	text-align: center;
-}
-
-thead {
-	background-color: #819595;
-}
-
-tbody {
-
-	td {
-		position: relative;
-	}
-}
-
 .card-background {
     background-image: url(./grevens.jpeg);
     background-position: 50% ;
@@ -213,6 +182,15 @@ tbody {
     display: flex;
     background-color: #3A405A;
     
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.list-item a {
+    color: #FBF5F3;
 }
 
 /* media code */
@@ -243,7 +221,6 @@ tbody {
     
     }
    
-
     .nav-list {
         list-style-type: none;
         width: 100%;
@@ -256,6 +233,11 @@ tbody {
 
     .nav-list .list-item {
         display: block;    
+    }
+
+    .nav-list-footer {
+        display: flex;
+        justify-content: center;
     }
 
     .active {
@@ -294,6 +276,7 @@ tbody {
         transform: rotateY(calc(var(--i)*45deg)) translateZ(150px);
     
     }
+    
 }
 
 @media all and (max-width: 624px) {

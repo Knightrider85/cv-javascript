@@ -8,7 +8,6 @@ function main() {
 }
 
 
-
 function toggleButton() {
 const toggleButton = document.getElementById('toggleButton');
 const navList = document.getElementById('naviList')
