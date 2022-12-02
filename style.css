@@ -76,12 +76,12 @@ body {
 
 
 .card {
-    width: 70%;
+    width: 60%;
     display: inline-table;
     background: #F9DEC9;
     padding: 0.6em 1em 0.6em 0.6em;
     margin-bottom: 1em;
-    border-radius: 0.3em;
+    border-radius: 2.3em;
     box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
     border: solid 1px #ccc;
     margin-top: 60px;
@@ -98,8 +98,13 @@ body {
 
  }
 
+ .card-font .my-experience-info {
+    display: block;
+ }
+
  .my-characteristic {
     background: #99B2DD;
+    color: #FBF5F3;
    
  } 
 
@@ -118,6 +123,11 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.banner-text1 h2 {
+    margin-bottom: 20px;
 }
 
 /* slider */
@@ -305,6 +315,10 @@ body {
 
 span {
     font-size: 16px;
+}
+
+h3 {
+    color: #FBF5F3;
 }
 
 /* 
