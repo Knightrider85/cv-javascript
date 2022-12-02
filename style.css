@@ -60,7 +60,7 @@ body {
     justify-content: space-around;
     padding: 1em 0;
     text-align: center;
-    background-image: url(./bildmig3.jpeg);
+    background-image: url(.//bildercv/bildmig3.jpeg);
     background-position: 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,9 @@ body {
     color: #312F2F;
     position: relative;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* slider */
@@ -125,7 +127,6 @@ body {
     height: 100px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
-    background-color: red;
     margin-top: 50px;
     margin-left: 48%;
 }
@@ -168,7 +169,7 @@ body {
 }
 
 .card-background {
-    background-image: url(./grevens.jpeg);
+    background-image: url(./bildercv/grevens.jpeg);
     background-position: 50% ;
 }
 
