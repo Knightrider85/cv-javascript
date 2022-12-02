@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding:0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 body {
@@ -85,6 +86,7 @@ body {
     box-shadow: rgb(0 0 0 / 20%) 3px 6px 10px;
     border: solid 1px #ccc;
     margin-top: 60px;
+    opacity: 0.9;
   }
 
   .card-font {
@@ -108,6 +110,7 @@ body {
    
  } 
 
+
 .banner {
     max-width: 1400px;
     width: 100%;
@@ -130,6 +133,10 @@ body {
     margin-bottom: 20px;
 }
 
+.banner-text1 li {
+    list-style: none;
+}
+
 /* slider */
 .slider {
     position: relative;
@@ -138,7 +145,7 @@ body {
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
     margin-top: 50px;
-    margin-left: 48%;
+    margin-left: 46%;
 }
 
 .slider span {
@@ -226,12 +233,12 @@ body {
     }
 
     .nav-list .list-item {
+    
     display: inline-block;
     padding: 20px 10px;
     
+}
     
-    }
-   
     .nav-list {
         list-style-type: none;
         width: 100%;
@@ -247,7 +254,7 @@ body {
     }
 
     .nav-list-footer {
-        display: flex;
+        display: block;
         justify-content: center;
     }
 
@@ -265,13 +272,8 @@ body {
         display: block;
       }
 
-      .slider {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        transform-style: preserve-3d;
-        animation: rotate 30s linear infinite;
-        background-color: red;
+    .slider {
+        
         margin-top: 50px;
         margin-left: 35%;
     }
@@ -290,11 +292,77 @@ body {
     
 }
 
-@media all and (max-width: 624px) {
-    
-    .table {
-        display: none;
+@media all and (max-width: 513px) {
+
+    .navbar {
+        flex-direction: column;
+        position: relative;
     }
+
+    .card {
+        box-shadow: none;
+        
+      }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        
+    }
+    .nav-list .list-item {
+        display: inline-block;
+        padding: 20px 10px;
+        
+        }
+        .nav-list {
+            list-style-type: none;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            display: none;
+            background-color: #3A405A;
+            
+        }
+    
+        .nav-list .list-item {
+            display: block;    
+        }
+    
+        .nav-list-footer {
+            display: block;
+            justify-content: center;
+        }
+        
+        .slider {
+            margin-left: 39%;
+        }
+
+        .menu {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 25px;
+            
+        }
+
+        .active {
+            display: block;
+        }
+
+        .flex-between {
+            display: block;
+            background-color: #3A405A;
+        }
+
+        .container {
+            min-width: auto;
+            display: block;
+          }
+
+       
+   
 }
 
 
@@ -318,6 +386,15 @@ span {
 }
 
 h3 {
+    color: #FBF5F3;
+    margin-bottom: inherit;
+}
+
+p {
+    margin-bottom: revert;
+}
+
+i {
     color: #FBF5F3;
 }
 
