@@ -8,7 +8,7 @@ function main() {
 }
 
 /**
- * function for opening hamburger navlist
+ * @type {Function} -function for toggleButton opening hamburger navlist 
  */
 function toggleButton() {
 const toggleButton = document.getElementById('toggleButton');
